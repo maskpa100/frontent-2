@@ -1,0 +1,32 @@
+.content {
+  max-width: 750px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid;
+    margin: 10px;
+    border-radius: 29px;
+    .title {
+      font-size: 19px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    .body {
+      font-size: 15px;
+    }
+    .comments {
+      font-size: 14px;
+      color: #4253d5;
+      text-align: center;
+      margin-top: 15px;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,9 +1,11 @@
 "use client";
-import Home from "@/components/Home";
-import styles from "./page.module.css";
-import { Provider } from "react-redux";
-import { store } from "@/redux/store";
+import Home from "@/components/Home/Home";
+import { PageWrapper } from "@/components/PageWrapper/PageWrapper";
 
 export default function Page() {
-  return <Home />;
+  return (
+    <PageWrapper>
+      <Home />
+    </PageWrapper>
+  );
 }
