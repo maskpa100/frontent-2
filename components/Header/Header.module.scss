@@ -1,0 +1,17 @@
+.header {
+  padding: 23px;
+  ul {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    list-style-type: none;
+    a {
+      padding: 0 20px;
+      color: #868686;
+      text-decoration: none;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}

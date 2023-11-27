@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { api } from "./rtkQuery";
+import { api } from "./ApiQuery";
 
 export const store = configureStore({
   reducer: {

@@ -12,16 +12,20 @@ type CommentsType = {
   name: string;
   postId: number;
 };
+type ParamPostsType = {
+  page: number;
+  limit: number;
+};
 export const api = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
     baseUrl: "https://jsonplaceholder.typicode.com/",
   }),
   endpoints: (builder) => ({
-    getPosts: builder.query<PostType[], void>({
-      query: () => {
+    getPosts: builder.query<PostType[], ParamPostsType>({
+      query: ({ page, limit }) => {
         return {
-          url: "posts",
+          url: `posts?_page=${page}&_limit=${limit}`,
           method: "GET",
         };
       },

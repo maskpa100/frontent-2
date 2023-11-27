@@ -1,5 +1,5 @@
 "use client";
-import { useGetCommentsQuery, useGetPostQuery } from "@/redux/rtkQuery";
+import { useGetCommentsQuery, useGetPostQuery } from "@/redux/ApiQuery";
 import s from "./Components.module.scss";
 export default function Comments({ postId }: { postId: number }) {
   const comment = useGetCommentsQuery(postId);

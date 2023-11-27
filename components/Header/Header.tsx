@@ -1,7 +1,8 @@
+import s from "./Header.module.scss";
 export default function Header() {
   return (
     <>
-      <div className="header">
+      <div className={s.header}>
         <ul>
           <li>
             <a href="/">Главная</a>
