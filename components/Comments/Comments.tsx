@@ -9,6 +9,7 @@ export default function Comments({ postId }: { postId: number }) {
   return (
     <>
       <div className={s.content}>
+        <a href="/">{"<"} Вернутся назад.</a>
         <div className={s.post}>
           <div className={s.title}>{post.data?.title}</div>
           <div className={s.body}>{post.data?.body}</div>

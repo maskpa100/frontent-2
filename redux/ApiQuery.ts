@@ -16,6 +16,13 @@ type ParamPostsType = {
   page: number;
   limit: number;
 };
+type SearchType = {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
+};
+
 export const api = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
@@ -46,6 +53,19 @@ export const api = createApi({
         };
       },
     }),
+    getSearch: builder.query<SearchType[], string>({
+      query: (search) => {
+        return {
+          url: `posts?title_like=${search}`,
+          method: "GET",
+        };
+      },
+    }),
   }),
 });
-export const { useGetPostsQuery, useGetCommentsQuery, useGetPostQuery } = api;
+export const {
+  useGetPostsQuery,
+  useGetCommentsQuery,
+  useGetPostQuery,
+  useGetSearchQuery,
+} = api;

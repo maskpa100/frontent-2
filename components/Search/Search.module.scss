@@ -1,0 +1,21 @@
+.search {
+  text-align: center;
+  padding: 17px;
+  input {
+    border: 2px solid #9e9b9b;
+    padding: 7px;
+  }
+  button {
+    color: white;
+    padding: 8px 9px 9px;
+    background-color: #9e9b9b;
+    font-size: 14px;
+  }
+  .close {
+    color: white;
+    padding: 8px 9px 9px;
+    background-color: #b04949;
+    font-size: 14px;
+    margin-left: 14px;
+  }
+}
